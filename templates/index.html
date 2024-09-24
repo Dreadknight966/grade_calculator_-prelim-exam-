@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap CSS-->
+    <style>
+        *{
+            font-family: poppins;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+
+    <!--Absences-->
+    <p>Enter the number of absences you have.</p>
+    <form method="POST" action="/calculate">
+        <input type="number" class="form-control" id="ATAT" name="ATAT" min="0" max="999" value="0">
+  
+    <!--Prelim Exam-->
+    <p>Enter your prelim exam grade 1-100</p>
+    <form method="POST" action="/calculate">
+        <input type="number" class="form-control" id="Exam" name="Exam" min="0" max="100" value="0">
+   
+    <!--Quizzes grade-->
+    <p>Enter your quizzes grade</p>
+    <form method="POST" action="/calculate">
+        <input type="number" class="form-control" name="Quizgrade1" min="0" max="100" value="0">
+   
+    <!--Requirements Grade-->
+    <p>Enter your requirements grade</p>
+    <form method="POST" action="/calculate">
+        <input type="number" class="form-control" id="Requirements" name="Requirements" min="0" max="100" value="0">
+
+    <!--Recitation Grade-->
+    <p>Enter your recitation grade</p>
+    <form method="POST" action="/calculate">
+        <input type="number" class="form-control" id="Recitation" name="Recitation" min="0" max="100" value="0">
+  
+
+    
+
+        <div class="result" value="calculate">
+            <br>
+            <button type="submit">Submit</button>
+        </div>
+
+    <h2>{{message}}</h2>
+
+    <h2>{{dean_message}}</h2>
+
+    <h2>Grade Required to pass:</h2>
+    <p>Midterms grade required: {{midterm_pass}}</p>
+    <p>Finals grade required: {{final_pass}}</p>
+
+    <h2>Dean's grade required to pass dean's list</h2>
+    <p>Midterms grade required: {{midterm_dean_pass}}</p>
+    <p>Finals grade required: {{final_dean_pass}}</p>
+
+    <h2></h2>
+    
+
+</form>
+</form>
+</form>
+</form>
+</form>
+
+</body>
+</html>
