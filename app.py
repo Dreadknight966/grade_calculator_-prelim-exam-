@@ -82,4 +82,4 @@ def calculate():
     return render_template("index.html", Prelim_grade=Prelim_grade, midterm_pass = midterm_pass, final_pass = final_pass, dean_midterm_pass = dean_midterm_pass, dean_final_pass = dean_final_pass, message = message, dean_message = dean_message)
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
